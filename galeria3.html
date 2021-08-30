@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta palabras clave -->
+    <meta name="keywords" content="Paulo Cohen, Fotógrafo, Fotografías, Profesional, Profesionales, Portfolio, Profile, Animals, 
+    Lion, Cat, Dog, Fotos, Photography, Photos, Photographer, Professional, Delfines, Paulo, Cohen,
+     Cisne, Bird, Husky ">
+
+    <!-- Meta descripción -->
+    <meta name="description"
+        content="Bienvenido a la galería 'Animals' de Paulo Cohen, 
+    en este porfolio encontrarás fotografías de todo lo que esté relacionado con los animales, la vida silvestre y acuática, aves, etc.">
+
+    <!-- Meta copyright -->
+    <meta name="copyright" content="Sebastian Fontana Project">
+
+    <!-- Meta autor -->
+    <meta name="author" content="Sebastian Fontana">
+
+    <!-- Meta OG -->
+    <meta property="og:title" content="People - Paulo Cohen">
+    <meta property="og:description"
+        content="Bienvenido a la galería 'Animals' de Paulo Cohen, 
+        en este porfolio encontrarás fotografías de todo lo que esté relacionado con los animales, la vida silvestre y acuática, aves, etc.">
+    <meta property="og:site_name" content="Paulo Cohen Photographer">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2017/01/14/12/59/iceland-1979445_960_720.jpg">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- CSS Crítico -->
+    <script src="js/localCSS.js">
+    </script>
+    <script id="loadcss">
+        loadCSS("css/style.css", document.getElementById("loadcss"));
+    </script>
+    <style>
+        @charset "UTF-8";
+        @import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);
+
+        .container-fluid {
+            width: 100%;
+            padding-right: var(--bs-gutter-x, .75rem);
+            padding-left: var(--bs-gutter-x, .75rem);
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        .collapse:not(.show) {
+            display: none
+        }
+
+        .nav-link {
+            display: block;
+            padding: .5rem 1rem;
+            color: #0d6efd;
+            text-decoration: none
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: .5rem;
+            padding-bottom: .5rem
+        }
+
+        .navbar>.container-fluid {
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .navbar-brand {
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            text-decoration: none;
+            white-space: nowrap
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none
+        }
+
+        .navbar-nav .nav-link {
+            padding-right: 0;
+            padding-left: 0
+        }
+
+        .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center
+        }
+
+        .navbar-toggler {
+            padding: .25rem .75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: .25rem
+        }
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%
+        }
+
+        @media (min-width:992px) {
+            .navbar-expand-lg {
+                flex-wrap: nowrap;
+                justify-content: flex-start
+            }
+
+            .navbar-expand-lg .navbar-nav {
+                flex-direction: row
+            }
+
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: .5rem;
+                padding-left: .5rem
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                display: flex !important;
+                flex-basis: auto
+            }
+
+            .navbar-expand-lg .navbar-toggler {
+                display: none
+            }
+        }
+
+        .navbar-light .navbar-brand {
+            color: rgba(0, 0, 0, .9)
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: rgba(0, 0, 0, .55)
+        }
+
+        .navbar-light .navbar-nav .nav-link.active {
+            color: rgba(0, 0, 0, .9)
+        }
+
+        .navbar-light .navbar-toggler {
+            color: rgba(0, 0, 0, .55);
+            border-color: rgba(0, 0, 0, .1)
+        }
+
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+        }
+
+        .ms-auto {
+            margin-left: auto !important
+        }
+
+        .bg-white {
+            background-color: #fff !important
+        }
+
+        @media (min-width:992px) {
+            .mb-lg-0 {
+                margin-bottom: 0 !important
+            }
+        }
+
+        * {
+            font-family: "Kaushan Script", cursive;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            background-color: #fff;
+            max-width: 1560px
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1999;
+            height: 64px
+        }
+
+        header .container-fluid {
+            padding: 0 5rem 0 3rem
+        }
+
+        header .logo {
+            transform: scale(.6);
+            width: 246px;
+            height: 40px
+        }
+
+        header .nav-link {
+            font-size: 20px
+        }
+
+        header .navbar-light .navbar-nav .nav-link {
+            color: gray;
+            text-decoration: underline;
+            font-weight: bolder
+        }
+
+        header .navbar-light .navbar-nav .nav-link.active {
+            color: #000;
+            text-decoration: none
+        }
+
+        .footers {
+            color: #000;
+            text-align: start;
+            position: relative;
+            left: 3%;
+            background: 0 0
+        }
+
+        .footers h4 {
+            font-size: 13px
+        }
+
+        .h1Galerias {
+            position: absolute;
+            color: #000;
+            margin-left: 10px;
+            z-index: 9999;
+            top: 10px;
+            left: 35%;
+            padding-top: 5px
+        }
+
+        .articuloG .gridG123 .galeriaSlide {
+            position: relative;
+            grid-area: 1/2/4/5
+        }
+
+        .articuloG .casilla1a {
+            grid-area: 1/1/2/2
+        }
+
+        .articuloG .casilla2a {
+            grid-area: 2/1/3/2
+        }
+
+        .articuloG .casilla3a {
+            grid-area: 3/1/4/2
+        }
+
+        .articuloG .casilla1b {
+            grid-area: 4/1/5/2
+        }
+
+        .articuloG .casilla2b {
+            grid-area: 4/2/5/3
+        }
+
+        .articuloG .casilla3b {
+            grid-area: 4/3/5/4
+        }
+
+        .articuloG .casilla1c {
+            grid-area: 4/4/5/5
+        }
+
+        .articuloG .casilla2c {
+            grid-area: 5/1/6/2
+        }
+
+        .articuloG .casilla3c {
+            grid-area: 5/2/6/3
+        }
+
+        .articuloG .casilla1d {
+            grid-area: 5/3/6/4
+        }
+
+        .articuloG .casilla2d {
+            grid-area: 5/4/6/5
+        }
+
+        @media only screen and (min-width:481px) and (max-width:1015px) {
+            .articuloG .gridG123 .galeriaSlide {
+                width: 100%;
+                grid-area: 1/1/4/4;
+                padding: 0
+            }
+
+            .articuloG .casilla1a {
+                grid-area: 4/1/5/2
+            }
+
+            .articuloG .casilla2a {
+                grid-area: 4/2/5/3
+            }
+
+            .articuloG .casilla3a {
+                grid-area: 4/3/5/4
+            }
+
+            .articuloG .casilla1b {
+                grid-area: 5/1/6/2
+            }
+
+            .articuloG .casilla2b {
+                grid-area: 5/2/6/3
+            }
+
+            .articuloG .casilla3b {
+                grid-area: 5/3/6/4
+            }
+
+            .articuloG .casilla1c {
+                grid-area: 6/1/7/2
+            }
+
+            .articuloG .casilla2c {
+                grid-area: 6/2/7/3
+            }
+
+            .articuloG .casilla3c {
+                grid-area: 6/3/7/4
+            }
+
+            .articuloG .casilla1d {
+                grid-area: 7/1/8/2
+            }
+
+            .articuloG .casilla2d {
+                grid-area: 7/2/8/4
+            }
+        }
+
+        @media only screen and (min-width:0px) and (max-width:480px) {
+            .h1Galerias {
+                position: absolute;
+                color: #000;
+                margin-left: 0;
+                z-index: 9999;
+                top: 18px;
+                left: 50%;
+                padding-top: 5px;
+                font-size: 15px;
+                width: 100px
+            }
+
+            .navbar-nav .nav-link {
+                font-size: 16px;
+                padding: .5rem 1.5rem
+            }
+
+            .navbar-brand {
+                margin-left: -70px
+            }
+
+            header .logo {
+                transform: scale(.4)
+            }
+
+            .navbar-toggler {
+                margin-right: 0
+            }
+
+            .articuloG .gridG123 .galeriaSlide {
+                display: flex;
+                grid-area: 1/1/4/3;
+                width: 100%;
+                margin: 0;
+                align-items: center;
+                padding-bottom: 0
+            }
+
+            .articuloG .gridG123 .casilla1a {
+                grid-area: 4/1/5/2
+            }
+
+            .articuloG .gridG123 .casilla2a {
+                grid-area: 4/2/5/3
+            }
+
+            .articuloG .gridG123 .casilla3a {
+                grid-area: 5/1/6/2
+            }
+
+            .articuloG .gridG123 .casilla1b {
+                grid-area: 5/2/6/3
+            }
+
+            .articuloG .gridG123 .casilla2b {
+                grid-area: 6/1/7/2
+            }
+
+            .articuloG .gridG123 .casilla3b {
+                grid-area: 6/2/7/3
+            }
+
+            .articuloG .gridG123 .casilla1c {
+                grid-area: 7/1/8/2
+            }
+
+            .articuloG .gridG123 .casilla2c {
+                grid-area: 7/2/8/3
+            }
+
+            .articuloG .gridG123 .casilla3c {
+                grid-area: 8/1/9/2
+            }
+
+            .articuloG .gridG123 .casilla1d {
+                grid-area: 8/2/9/3
+            }
+
+            .articuloG .gridG123 .casilla2d {
+                grid-area: 9/1/10/3;
+                max-height: 123px;
+                overflow: hidden
+            }
+        }
+
+        @media only screen and (min-width:0px) and (max-width:991px) {
+            header .container-fluid {
+                padding: 0 1.1rem 0 .8rem
+            }
+        }
+
+        @media only screen and (min-width:481px) and (max-width:990px) {
+            .navbar-toggler {
+                margin-right: 30px
+            }
+
+            .ms-auto {
+                margin-left: 2.5rem !important
+            }
+
+            header .container-fluid {
+                padding: 0 1.1rem 0 0
+            }
+        }
+
+        @media only screen and (min-width:481px) and (max-width:800px) {
+            .h1Galerias {
+                position: absolute;
+                color: #000;
+                margin-left: 10px;
+                z-index: 9999;
+                top: 10px;
+                left: 50%;
+                padding-top: 5px
+            }
+        }
+
+        @media only screen and (min-width:800px) and (max-width:990px) {
+            .h1Galerias {
+                position: absolute;
+                color: #000;
+                margin-left: 10px;
+                z-index: 9999;
+                top: 10px;
+                left: 50%;
+                padding-top: 5px
+            }
+        }
+    </style>
+    <!-- CSS Propio -->
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+
+    <!-- Icono para título -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icons8-camera-16.png" />
+
+    <title>Animals - Paulo Cohen</title>
+
+</head>
+
+<body>
+
+    <!-- Empieza Header -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="img/logo.png" alt="logo">
+                </a>
+                <h1 class="h1Galerias">Animals</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-lg-0 px-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria1.html">nature</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria2.html">people</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navLi nav-link active" aria-current="page" href="galeria3.html">animals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navLi nav-link  " href="contacto.html">contact/about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="https://www.facebook.com/profile.php?id=100071367615701">
+
+                                <img class="redes" src="img/face.png" alt="Facebook logo" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://www.instagram.com/p/CSsGnFDLe0z/?utm_source=ig_web_copy_link">
+
+                                <img class="redes" src="img/insta.png" alt="Instagram logo" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://www.linkedin.com/posts/sebastianfontana_ya-cada-vez-falta-menos-a-mi-proyecto-ejemplo-activity-6833416434039693312-leCI">
+
+                                <img class="redes" src="img/linkedin.png" alt="Linkedin logo" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="clearFloats"></div>
+
+    <!-- termina header -->
+    <!--Empieza Artículo -->
+
+    <article class="articuloG">
+        <div class="gridG123" id="#g123">
+            <div class="galeriaSlide">
+                <div>
+                    <img class="imagenSlide" alt="Foto cisne" src="img/Animals1.webp" style="display: block;">
+                    <img class="imagenSlide" alt="Foto delfín" src="img/Animals2.webp">
+                    <img class="imagenSlide" alt="Foto elefante" src="img/Animals3.webp">
+                    <img class="imagenSlide" alt="Foto tigre" src="img/Animals4.webp">
+                    <img class="imagenSlide" alt="Foto gato" src="img/Animals5.webp">
+                    <img class="imagenSlide" alt="Foto león" src="img/Animals6.webp">
+                    <img class="imagenSlide" alt="Foto ave 1" src="img/Animals7.webp">
+                    <img class="imagenSlide" alt="Foto peacock" src="img/Animals8.webp">
+                    <img class="imagenSlide" alt="Foto ave 2" src="img/Animals9.webp">
+                    <img class="imagenSlide" alt="Foto halcón" src="img/Animals10.webp">
+                    <img class="imagenSlide" alt="Foto pollito" src="img/Animals11.webp">
+                </div>
+                <div>
+
+                    <button class="botonIzq" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="botonDer" onclick="plusSlides(+1)">&#10095;</button>
+
+                </div>
+            </div>
+            <div class="casilla1a dot" onclick="currentSlide (1)">
+                <a href="#"><img src="img/Animals1b.webp" alt="Foto cisne"></a>
+            </div>
+            <div class="casilla2a dot" onclick="currentSlide (2)">
+                <a href="#"><img src="img/Animals2b.webp" alt="Foto delfín"></a>
+            </div>
+            <div class="casilla3a dot" onclick="currentSlide (3)">
+                <a href="#"><img src="img/Animals3b.webp" alt="Foto elefante"></a>
+            </div>
+            <div class="casilla1b dot" onclick="currentSlide (4)">
+                <a href="#"><img src="img/Animals4b.webp" alt="Foto tigre"></a>
+            </div>
+            <div class="casilla2b dot" onclick="currentSlide (5)">
+                <a href="#"><img src="img/Animals5b.webp" alt="Foto gato"></a>
+            </div>
+            <div class="casilla3b dot" onclick="currentSlide (6)">
+                <a href="#"><img src="img/Animals6b.webp" alt="Foto león"></a>
+            </div>
+            <div class="casilla1c dot" onclick="currentSlide (7)">
+                <a href="#"><img src="img/Animals7b.webp" alt="Foto ave 1"></a>
+            </div>
+            <div class="casilla2c dot" onclick="currentSlide (8)">
+                <a href="#"><img src="img/Animals8b.webp" alt="Foto peacock"></a>
+            </div>
+            <div class="casilla3c dot" onclick="currentSlide (9)">
+                <a href="#"><img src="img/Animals9b.webp" alt="Foto ave 2"></a>
+            </div>
+            <div class="casilla1d dot" onclick="currentSlide (10)">
+                <a href="#"><img src="img/Animals10b.webp" alt="Foto halcón"></a>
+            </div>
+            <div class="casilla2d dot" onclick="currentSlide (11)">
+                <a href="#"><img src="img/Animals11b.webp" alt="Foto pollito"></a>
+            </div>
+        </div>
+    </article>
+
+    <!-- termina artículo-->
+    <!-- Clear Floats -->
+
+    <div class="clearFloats">
+    </div>
+
+    <!-- termina clear floats -->
+    <!-- Empieza Footer -->
+
+    <footer>
+        <div class="footers">
+            <p>Copyright © Paulo Cohen 2021</p>
+        </div>
+    </footer>
+
+    <!-- termina footer -->
+    <!-- JAVA -->
+
+    <script>
+        var slideIndex = 1;
+
+        var myTimer;
+
+        var slideshowContainer;
+
+        window.addEventListener("load", function () {
+            showSlides(slideIndex);
+            myTimer = setInterval(function () {
+                plusSlides(1)
+            }, 4000);
+
+            slideshowContainer = document.getElementsByClassName('galeriaSlide')[0];
+
+            slideshowContainer.addEventListener('mouseenter', pause)
+            slideshowContainer.addEventListener('mouseleave', resume)
+        })
+
+        // botones next y previous
+
+        function plusSlides(n) {
+            clearInterval(myTimer);
+            if (n < 0) {
+                showSlides(slideIndex -= 1);
+            } else {
+                showSlides(slideIndex += 1);
+            }
+        }
+
+        //controla el slide y resetea el intervalo de ser necesario
+
+        function currentSlide(n) {
+            clearInterval(myTimer);
+            myTimer = setInterval(function () {
+                plusSlides(n + 1)
+            }, 4000);
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("imagenSlide");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        pause = () => {
+            clearInterval(myTimer);
+        }
+
+        resume = () => {
+            clearInterval(myTimer);
+            myTimer = setInterval(function () {
+                plusSlides(slideIndex)
+            }, 4000);
+        }
+    </script>
+    <!-- JAVA Bootstrap -->
+
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- termina java -->
+
+</body>
+
+</html>

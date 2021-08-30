@@ -1,0 +1,32 @@
+//Bootstrap
+@import "./bootstrap/bootstrap.scss";
+//Abstracts
+@import "./abstracts/mixins";
+//Base
+@import "./base/typography";
+@import "./base/reset";
+@import "./base/base";
+//Layouts
+@import "./layout/header";  
+@import "./layout/footer";
+//Paginas html
+@import "./pages/index";
+@import "./pages/galerias123";
+@import "./pages/contacto";
+@import "./pages/mediasQ";
+//Componentes
+@import "./components/slider";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+/* -------------- */
+/* GALERIAS123---Css de la sección galeria1.html, galeria2.html, galeria3.html */
+/* -------------- */
+
+$width: 100%;
+
+.h1Galerias{
+    @include h1(absolute, black, 10px, 9999, 10px, 35%, 5px);
+    cursor: default
+}
+
+/* CSS GRID */
+
+.articuloG{
+    @include flexCenter(flex, center);
+    .gridG123 {
+    @include divSize(auto, auto, auto);
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(6, 3fr);
+    grid-column-gap: 3%;
+    grid-row-gap: 3%;
+    margin: 10px auto;
+    padding: 0;
+
+    .galeriaSlide {
+
+        position: relative;
+        grid-area: 1 / 2 / 4 / 5;
+
+        div {
+display: flex;
+justify-content: center;
+            img {
+                @include divSize(500px, 900px, 100%);
+                position: absolute;
+                top: 0;
+                margin: 0;
+                padding:0px 0% 2.15% 0%;
+                object-fit: cover;
+        }
+        }
+
+        div {
+            .botonIzq {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                transform: translate(0%, -50%);
+                cursor: pointer;
+                padding: 8px 16px;
+            }
+
+            .botonDer {
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: 0%;
+                transform: translate(0%, -50%);
+                cursor: pointer;
+                padding: 8px 16px;
+            }
+
+            .botonIzq,
+            .botonDer {
+                background: transparent;
+                height: 100%;
+                border: none;
+                color: gray;
+                font-size: 30px;
+            }
+        }
+    }}
+
+    /* CSS GALERIA MINI IMAGENES */
+
+    .dot a img {
+        @include divSize(144px, 240px, 100%);
+        display: flex;
+        margin: 0 auto;
+        padding: auto;
+        object-fit: cover;
+    }
+
+    .casilla1a {
+        grid-area: 1 / 1 / 2 / 2;
+
+    }
+
+    .casilla2a {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .casilla3a {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .casilla1b {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .casilla2b {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+
+    .casilla3b {
+        grid-area: 4 / 3 / 5 / 4;
+    }
+
+    .casilla1c {
+        grid-area: 4 / 4 / 5 / 5;
+    }
+
+    .casilla2c {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+
+    .casilla3c {
+        grid-area: 5 / 2 / 6 / 3;
+    }
+
+    .casilla1d {
+        grid-area: 5 / 3 / 6 / 4;
+    }
+
+    .casilla2d {
+        grid-area: 5 / 4 / 6 / 5;
+    }
+
+    .dot {
+        @include divSize(100%, 100%, 100%);
+
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in;
+            box-sizing: content-box;
+        }
+        &:not(:hover){
+            // transform: scale(1);
+            transition: all 0.3s ease-in;
+            filter: grayscale(1);
+        }
+    }
+
+
+
+}

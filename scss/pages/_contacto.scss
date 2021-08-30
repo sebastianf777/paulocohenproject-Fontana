@@ -1,0 +1,139 @@
+/* -------------- */
+/* CONTACTO---Css de la sección contacto.html -------------------- !!! */
+/* -------------- */
+
+//Hay css de contacto en mixins!
+
+%flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+//Artículo Contacto
+
+.flexWrapContacto {
+    padding-top: 10px;
+
+@include flexCenter(flex, space-evenly);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1140px;
+
+    .articuloContacto {
+        display: flex;
+        justify-content: space-evenly;
+
+        flex-direction: row;
+        width: 100%;
+
+        .imagenContacto {
+
+            border: 1px solid black;
+            height: 400px;
+            width: 40%;
+            min-width: 350px;
+            background-image: url("../img/Fotografo.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+
+        }
+
+        .about {
+            width: 60%;
+            max-width: 600px;
+            flex-direction: column;
+            margin: 10px 0px;
+            @extend %flexCenter;
+
+
+            h2 {
+                @include textModel($font*2.5, start, black);
+                margin: 0px 30px 10px 20px;
+                cursor: default;
+                #Contact a{
+                    color: grey;
+                    text-decoration: none;
+                }
+            }
+        
+            h3 {
+                line-height: 1.6;
+                @include textModel($font*1.4, start, black)
+            }
+        }
+    }
+
+//Sección Contacto
+
+.sectionContacto{
+    width: 100%;
+    margin:  40px 20px 0 20px;
+    .últimosTrabajos{
+        @include textModel ($font*2, start, grey);
+            margin: 0 0 0 50px;
+            cursor: default;
+    }
+    .containerContacto {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .cont1,
+        .cont2,
+        .cont3,
+        .cont4 {
+            @extend %flexCenter;
+            max-width: 100%;
+            max-height: 100%;
+            width: 24%;
+            height: 200px;
+            margin: 0 5px;
+
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .datos {
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+        h2 {
+        
+            @include textModel ($font*2, start, black);
+            margin: 10px;
+            cursor: default;
+            #About a{
+                color: grey;
+                text-decoration: none;
+            }
+        }
+    
+        h3 {
+            @include textModel ($font*1.5, left, black);
+            line-height: 1.6;
+
+            margin-left: 20px;
+            text-shadow: 1px 1px 2px white;
+        }
+    }
+
+}
+
+.footerContacto{
+    position: relative;
+    width: 100%;
+    text-align: start;
+    left: 3%;
+    h4{
+    font-size: 13px;
+    }
+}
+}

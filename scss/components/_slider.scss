@@ -1,0 +1,20 @@
+//Slider de index.html
+.containerIndex {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    z-index: 1;
+    .carousel-indicators {
+        position: fixed;
+    }
+    div .carousel-item img, div .carousel-item .amp-img {
+        width: 1750px;
+        height: 800px;
+        object-fit: cover;
+        object-position: 57% 0;
+    }
+    
+}
+.carousel-item{
+    display: visible;
+}

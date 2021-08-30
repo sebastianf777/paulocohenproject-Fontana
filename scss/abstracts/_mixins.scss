@@ -1,0 +1,31 @@
+@mixin textModel($font, $align, $color) {
+
+    font-size: $font;
+    text-align: $align;
+    color: $color;
+}
+@mixin h1 ($position, $color, $marginLeft, $zIndex, $topH1, $leftH1, $padTopH1){
+    position: $position;
+    color: $color;
+    margin-left: $marginLeft;
+    z-index: $zIndex;
+    top: $topH1;
+    left: $leftH1;
+    padding-top: $padTopH1;
+}
+@mixin divSize($height, $width, $maxWidht) {
+    height: $height;
+    width: $width;
+    max-width: $maxWidht;
+}
+@mixin flexCenter($flex, $center){
+    display: $flex;
+    justify-content: $center;
+}
+
+$font: 1rem;
+
+//Uso de operaciones (multiplicacion) y Mixins
+
+//contacto.html
+

@@ -1,0 +1,58 @@
+/* -------------- */
+/* INDEX-------Css de la sección de index.html ------------- !!!*/
+/* -------------- */
+
+.navIndex {
+    position: fixed;
+    height: 50px;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+    padding: 2.3rem 5rem 2rem 3rem;
+
+    a .logoIndex {
+        cursor: default;
+        filter: invert(1);
+    }
+
+    div ul li .navLinkIndex {
+        font-size: 20px;
+        display: block;
+        color: gray;
+        text-decoration: underline;
+        padding: .5rem .5rem;
+
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .redesIndex {
+            filter: invert(1);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.h1Index{
+    @include h1(relative, white, 3%, 9999, 0, 0, 0);
+    cursor: default;
+    width: 100px;
+    
+}
+
+.footerIndex {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 3%;
+    background: none;
+
+    p {
+        font-size: 13px;
+    }
+
+}

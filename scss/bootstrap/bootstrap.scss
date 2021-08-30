@@ -1,0 +1,30 @@
+
+@import "../../bootstrap/scss/functions";
+@import "../../bootstrap/scss/variables";
+@import "../../bootstrap/scss/mixins";
+@import "../../bootstrap/scss/utilities";
+@import "../../bootstrap/scss/containers";
+@import "../../bootstrap/scss/buttons";
+@import "../../bootstrap/scss/transitions";
+@import "../../bootstrap/scss/dropdown";
+@import "../../bootstrap/scss/nav";
+@import "../../bootstrap/scss/navbar";
+@import "../../bootstrap/scss/carousel";
+@import "../../bootstrap/scss/utilities/api";
+
+$controles-slider: (prev: none,
+    next: none);
+
+@each $carousel-control,
+$display in $controles-slider {
+    .carousel-control-#{$carousel-control} {
+        display: $display;
+    }
+
+}
+
+.navIndex {
+    &.navbar-light .navbar-toggler {
+        filter: invert(1);
+    }
+}

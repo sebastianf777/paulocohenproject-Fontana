@@ -1,0 +1,41 @@
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 1999;
+    height: 64px;
+.container-fluid{
+    padding: 0 5rem 0 3rem;
+}
+.logo, .logoIndex{
+    transform: scale(0.6);
+    width: 246px;
+height: 40px;
+}
+    .nav-link,
+    .navLinkIndex {
+        font-size: 20px;
+    }
+
+    .redes:hover {
+        transform: scale(1.1);
+    }
+
+    //color del item del nav inactivo
+    .navbar-light .navbar-nav .nav-link {
+        color: gray;
+        text-decoration: underline;
+        font-weight: bolder;
+    }
+
+    //color del item del nav activo y del inactivo con hover
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: black;
+        text-decoration: none;
+    }
+
+    .clearFloats {
+        clear: both;
+    }
+
+}
