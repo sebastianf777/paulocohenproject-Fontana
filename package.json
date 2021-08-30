@@ -1,5 +1,5 @@
 {
-  "name": "webfotografo-fontana",
+  "name": "paulocohenproject-fontana",
   "version": "1.0.0",
   "description": "web ejemplo para un fotógrafo profesional",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sebastianf777/webfotografo-Fontana.git"
+    "url": "git+https://github.com/sebastianf777/paulocohenproject-Fontana.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sebastianf777/webfotografo-Fontana/issues"
+    "url": "https://github.com/sebastianf777/paulocohenproject-Fontana.git/issues"
   },
-  "homepage": "https://github.com/sebastianf777/webfotografo-Fontana#readme",
+  "homepage": "https://github.com/sebastianf777/paulocohenproject-Fontana.git#readme",
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
