@@ -116,7 +116,7 @@ function onloadCSS( ss, callback ) {
 		ss.onloadcssdefined( newcb );
 	}
 }
-
+var stylesheet = loadCSS( "css/style.css" );
 onloadCSS( stylesheet, function() {
 	var expires = new Date(+new Date + (7 * 24 * 60 * 60 * 1000)).toUTCString();
 	document.cookie = 'fullCSS=true; expires=' + expires;
