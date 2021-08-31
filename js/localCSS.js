@@ -117,6 +117,8 @@ function onloadCSS( ss, callback ) {
 	}
 }
 var stylesheet = loadCSS( "css/style.css" );
+loadCSS("css/style.css", document.getElementById("loadcss"));
+
 onloadCSS( stylesheet, function() {
 	var expires = new Date(+new Date + (7 * 24 * 60 * 60 * 1000)).toUTCString();
 	document.cookie = 'fullCSS=true; expires=' + expires;
