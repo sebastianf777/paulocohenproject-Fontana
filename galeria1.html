@@ -30,11 +30,14 @@
     <meta property="og:site_name" content="Paulo Cohen Photographer">
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2017/09/18/15/38/moon-2762111_960_720.jpg">
     <meta property="og:locale" content="es_ES">
-    
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- Lazy Load -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.5/lazysizes.min.js"></script>
 
     <!-- CSS Crítico -->
     <script src="js/localCSS.js">
@@ -562,55 +565,55 @@
         <div class="gridG123" id="#g123">
             <div class="galeriaSlide">
                 <div class="cuadroSlide">
-                    <img class="imagenSlide" alt="Foto paisaje 1" src="img/Nature1.webp" style="display: block;">
-                    <img class="imagenSlide" alt="Foto paisaje 2" src="img/Nature2.webp">
-                    <img class="imagenSlide" alt="Foto bosque 1" src="img/Nature3.webp">
-                    <img class="imagenSlide" alt="Foto montañas 1" src="img/Nature4.webp">
-                    <img class="imagenSlide" alt="Foto paisaje 3" src="img/Nature5.webp">
-                    <img class="imagenSlide" alt="Foto bosque 2" src="img/Nature6.webp">
-                    <img class="imagenSlide" alt="Foto oceano 1" src="img/Nature7.webp">
-                    <img class="imagenSlide" alt="Foto camino 1" src="img/Nature8.webp">
-                    <img class="imagenSlide" alt="Foto paisaje 4" src="img/Nature9.webp">
-                    <img class="imagenSlide" alt="Foto bosque 3" src="img/Nature10.webp">
-                    <img class="imagenSlide" alt="Foto luna 1" src="img/Nature11.webp">
+                    <img class="imagenSlide lazyload" alt="Foto paisaje 1" data-src="img/Nature1.webp" style="display: block;">
+                    <img class="imagenSlide lazyload" alt="Foto paisaje 2" data-src="img/Nature2.webp">
+                    <img class="imagenSlide lazyload" alt="Foto bosque 1" data-src="img/Nature3.webp">
+                    <img class="imagenSlide lazyload" alt="Foto montañas 1" data-src="img/Nature4.webp">
+                    <img class="imagenSlide lazyload" alt="Foto paisaje 3" data-src="img/Nature5.webp">
+                    <img class="imagenSlide lazyload" alt="Foto bosque 2" data-src="img/Nature6.webp">
+                    <img class="imagenSlide lazyload" alt="Foto oceano 1" data-src="img/Nature7.webp">
+                    <img class="imagenSlide lazyload" alt="Foto camino 1" data-src="img/Nature8.webp">
+                    <img class="imagenSlide lazyload" alt="Foto paisaje 4" data-src="img/Nature9.webp">
+                    <img class="imagenSlide lazyload" alt="Foto bosque 3" data-src="img/Nature10.webp">
+                    <img class="imagenSlide lazyload" alt="Foto luna 1" data-src="img/Nature11.webp">
                 </div>
                 <div>
                     <button class="botonIzq" onclick="plusSlides(-1)">&#10094;</button>
                     <button class="botonDer" onclick="plusSlides(+1)">&#10095;</button>
                 </div>
             </div>
-            <div class="casilla1a dot" onclick="currentSlide (1)">
-                <a href="#" class=><img alt="Foto luna" src="img/Nature1b.webp" alt="Foto paisaje 1"></a>
+            <div class="casilla1a dot lazyload" onclick="currentSlide (1)">
+                <a href="#" class=><img alt="Foto luna" data-src="img/Nature1b.webp" alt="Foto paisaje 1"></a>
             </div>
-            <div class="casilla2a dot" onclick="currentSlide (2)">
-                <a href="#"><img alt="Foto bosque" src="img/Nature2b.webp" alt="Foto paisaje 2"></a>
+            <div class="casilla2a dot lazyload" onclick="currentSlide (2)">
+                <a href="#"><img alt="Foto bosque" data-src="img/Nature2b.webp" alt="Foto paisaje 2"></a>
             </div>
-            <div class="casilla3a dot" onclick="currentSlide (3)">
-                <a href="#"><img alt="Foto man" src="img/Nature3b.webp" alt="Foto bosque 1"></a>
+            <div class="casilla3a dot lazyload" onclick="currentSlide (3)">
+                <a href="#"><img alt="Foto man" data-src="img/Nature3b.webp" alt="Foto bosque 1"></a>
             </div>
-            <div class="casilla1b dot" onclick="currentSlide (4)">
-                <a href="#"><img alt="Foto bosque 2" src="img/Nature4b.webp" alt="Foto montañas 1"></a>
+            <div class="casilla1b dot lazyload" onclick="currentSlide (4)">
+                <a href="#"><img alt="Foto bosque 2" data-src="img/Nature4b.webp" alt="Foto montañas 1"></a>
             </div>
-            <div class="casilla2b dot" onclick="currentSlide (5)">
-                <a href="#"><img alt="Foto campo" src="img/Nature5b.webp" alt="Foto paisaje 3"></a>
+            <div class="casilla2b dot lazyload" onclick="currentSlide (5)">
+                <a href="#"><img alt="Foto campo" data-src="img/Nature5b.webp" alt="Foto paisaje 3"></a>
             </div>
-            <div class="casilla3b dot" onclick="currentSlide (6)">
-                <a href="#"><img alt="Foto bosque 3" src="img/Nature6b.webp" alt="Foto bosque 2"></a>
+            <div class="casilla3b dot lazyload" onclick="currentSlide (6)">
+                <a href="#"><img alt="Foto bosque 3" data-src="img/Nature6b.webp" alt="Foto bosque 2"></a>
             </div>
-            <div class="casilla1c dot" onclick="currentSlide (7)">
-                <a href="#"><img alt="Foto bosque 4" src="img/Nature7b.webp" alt="Foto oceano 1"></a>
+            <div class="casilla1c dot lazyload" onclick="currentSlide (7)">
+                <a href="#"><img alt="Foto bosque 4" data-src="img/Nature7b.webp" alt="Foto oceano 1"></a>
             </div>
-            <div class="casilla2c dot" onclick="currentSlide (8)">
-                <a href="#"><img alt="Foto camino" src="img/Nature8b.webp" alt="Foto camino 1"></a>
+            <div class="casilla2c dot lazyload" onclick="currentSlide (8)">
+                <a href="#"><img alt="Foto camino" data-src="img/Nature8b.webp" alt="Foto camino 1"></a>
             </div>
-            <div class="casilla3c dot" onclick="currentSlide (9)">
-                <a href="#"><img alt="Foto bosque 5" src="img/Nature9b.webp" alt="Foto paisaje 4"></a>
+            <div class="casilla3c dot lazyload" onclick="currentSlide (9)">
+                <a href="#"><img alt="Foto bosque 5" data-src="img/Nature9b.webp" alt="Foto paisaje 4"></a>
             </div>
-            <div class="casilla1d dot" onclick="currentSlide (10)">
-                <a href="#"><img alt="Foto oceano" src="img/Nature10b.webp" alt="Foto bosque 3"></a>
+            <div class="casilla1d dot lazyload" onclick="currentSlide (10)">
+                <a href="#"><img alt="Foto oceano" data-src="img/Nature10b.webp" alt="Foto bosque 3"></a>
             </div>
-            <div class="casilla2d dot" onclick="currentSlide (11)">
-                <a href="#"><img alt="Foto peacock" src="img/Nature11b.webp" alt="Foto luna 1"></a>
+            <div class="casilla2d dot lazyload" onclick="currentSlide (11)">
+                <a href="#"><img alt="Foto peacock" data-src="img/Nature11b.webp" alt="Foto luna 1"></a>
             </div>
         </div>
     </article>
