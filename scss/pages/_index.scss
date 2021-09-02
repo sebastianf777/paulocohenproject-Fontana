@@ -8,14 +8,15 @@
     top: 0px;
     width: 100%;
     z-index: 2;
-    padding: 2.3rem 5rem 2rem 3rem;
+    padding: 2.3rem 6.6rem 2rem 3rem;
 
     a .logoIndex {
         cursor: default;
         filter: invert(1);
     }
 
-    div ul li .navLinkIndex {
+    div ul {
+        li .navLinkIndex {
         font-size: 20px;
         display: block;
         color: gray;
@@ -35,10 +36,12 @@
             }
         }
     }
+    }
+    
 }
 
 .h1Index{
-    @include h1(relative, white, 3%, 9999, 0, 0, 0);
+    @include h1(absolute, white, 23%, 9999, 23%, 11%, 0);
     cursor: default;
     width: 100px;
     
