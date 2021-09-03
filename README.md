@@ -15,11 +15,11 @@
 
 - 📄 Know about my experiences [https://www.linkedin.com/in/sebastianfontana](https://www.linkedin.com/in/sebastianfontana)
 
-- 💬 Ask me about **git, sass or JavaScript**
+- 💬 Ask me about **Sass, Git or JavaScript**
 
 - 📫 How to reach me **sebastianf777@outlook.com**
 
-- ⚡ Fun fact [Singing is one of my hidden talents](Singing is one of my hidden talents)
+- ⚡ Fun fact Singing is one of my hidden talents ;)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
